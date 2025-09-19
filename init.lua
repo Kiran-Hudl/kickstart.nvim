@@ -411,8 +411,14 @@ require('lazy').setup({
         -- },
         -- pickers = {}
         defaults = {
-          layout_strategy = 'vertical',
-          layout_config = { height = 0.95 },
+          layout_config = {
+            horizontal = {
+              preview_width = 0.6,
+              results_width = 0.4,
+            },
+            height = 0.99,
+            width = 0.99,
+          },
         },
         extensions = {
           ['ui-select'] = {
